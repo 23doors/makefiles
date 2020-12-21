@@ -13,7 +13,7 @@ GOLANGCILINT_CONCURRENCY ?= 16
 
 $(GOLANGCILINT): $(GOBIN)
 	$(info $(_bullet) Installing <golangci-lint>)
-	@mkdir -p bin
+	@mkdir -p $(DEV_BIN_PATH)
 	GOBIN=bin $(GOBIN) github.com/golangci/golangci-lint/cmd/golangci-lint@v$(GOLANGCILINT_VERSION)
 
 .PHONY: deps-go format-go lint-go test-go test-coverage-go integration-test-go

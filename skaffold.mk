@@ -13,7 +13,7 @@ DOCKER_REPO ?= ""
 
 $(SKAFFOLD):
 	$(info $(_bullet) Installing <skaffold>")
-	@mkdir -p bin
+	@mkdir -p $(DEV_BIN_PATH)
 	curl -sSfL https://storage.googleapis.com/skaffold/releases/v$(SKAFFOLD_VERSION)/skaffold-$(OS)-amd64 -o $(SKAFFOLD)
 	chmod u+x $(SKAFFOLD)
 

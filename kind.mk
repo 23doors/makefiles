@@ -15,7 +15,7 @@ BOOTSTRAP_CONTEXT := kind-$(KIND_CLUSTER_NAME)
 
 $(KIND):
 	$(info $(_bullet) Installing <kind>)
-	@mkdir -p bin
+	@mkdir -p $(DEV_BIN_PATH)
 	curl -sSfL https://kind.sigs.k8s.io/dl/v$(KIND_VERSION)/kind-$(OS)-amd64 -o $(KIND)
 	chmod u+x $(KIND)
 

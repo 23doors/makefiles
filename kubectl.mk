@@ -8,7 +8,7 @@ KUBECTL := $(DEV_BIN_PATH)/kubectl_$(KUBECTL_VERSION)
 
 $(KUBECTL):
 	$(info $(_bullet) Installing <kubectl>)
-	@mkdir -p bin
+	@mkdir -p $(DEV_BIN_PATH)
 	curl -sSfL https://storage.googleapis.com/kubernetes-release/release/v$(KUBECTL_VERSION)/bin/$(OS)/amd64/kubectl -o $(KUBECTL)
 	chmod u+x $(KUBECTL)
 

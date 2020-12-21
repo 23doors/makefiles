@@ -9,7 +9,7 @@ SQLC_VERSION ?= 1.5.0
 
 $(SQLC):
 	$(info $(_bullet) Installing <sqlc>)
-	@mkdir -p bin
+	@mkdir -p $(DEV_BIN_PATH)
 	curl -sSfL https://github.com/kyleconroy/sqlc/releases/download/v$(SQLC_VERSION)/sqlc-v$(SQLC_VERSION)-$(OS)-amd64.tar.gz | tar -C bin -xz
 	chmod u+x $(SQLC)
 

@@ -8,7 +8,7 @@ GOBIN := $(DEV_BIN_PATH)/gobin_$(GOBIN_VERSION)
 
 $(GOBIN):
 	$(info $(_bullet) Installing <gobin>)
-	@mkdir -p bin
+	@mkdir -p $(DEV_BIN_PATH)
 	curl -sSfL https://github.com/myitcv/gobin/releases/download/v$(GOBIN_VERSION)/$(OS)-amd64 -o $(GOBIN)
 	chmod u+x $(GOBIN)
 
