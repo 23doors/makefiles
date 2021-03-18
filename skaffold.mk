@@ -4,7 +4,7 @@ _include_skaffold_mk := 1
 include makefiles/shared.mk
 include makefiles/kubectl.mk
 
-SKAFFOLD_VERSION ?= 1.16.0
+SKAFFOLD_VERSION ?= 1.20.0
 SKAFFOLD := $(DEV_BIN_PATH)/skaffold_$(SKAFFOLD_VERSION)
 
 KUBE_NAMESPACE ?= "default"

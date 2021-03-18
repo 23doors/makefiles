@@ -3,7 +3,7 @@ _include_kubectl_mk := 1
 
 include makefiles/shared.mk
 
-KUBECTL_VERSION ?= 1.17.11
+KUBECTL_VERSION ?= 1.17.15
 KUBECTL := $(DEV_BIN_PATH)/kubectl_$(KUBECTL_VERSION)
 
 $(KUBECTL):

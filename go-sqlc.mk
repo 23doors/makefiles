@@ -4,7 +4,7 @@ _include_sqlc_mk := 1
 include makefiles/shared.mk
 
 SQLC := $(DEV_BIN_PATH)/sqlc
-SQLC_VERSION ?= 1.5.0
+SQLC_VERSION ?= 1.7.0
 
 $(SQLC):
 	$(info $(_bullet) Installing <sqlc>)
